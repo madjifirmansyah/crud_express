@@ -20,16 +20,17 @@ const Todo = db.define('todolist', {
     },
     tanda: {
         type: DataTypes.STRING
-    },
-    createdAt: {
-        type: DataTypes.DATE
-    },
-    updatedAt: {
-        type: DataTypes.DATE
     }
+    // createdAt: {
+    //     type: DataTypes.DATE
+    // },
+    // updatedAt: {
+    //     type: DataTypes.DATE
+    // }
 }, {
     // Freeze Table Name
-    freezeTableName: true
+    freezeTableName: true,
+    timestamps: false
 });
 
 // Export model Product
